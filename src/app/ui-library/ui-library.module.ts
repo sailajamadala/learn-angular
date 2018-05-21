@@ -1,0 +1,85 @@
+import { NgModule } from '@angular/core';
+
+import {
+  MatButtonModule,
+  MatMenuModule,
+  MatToolbarModule,
+  MatIconModule,
+  MatCardModule,
+  MatSidenavModule,
+  MatProgressBarModule,
+  MatFormFieldModule,
+  MatDatepickerModule,
+  MatNativeDateModule,
+  MatInputModule,
+  MatCheckboxModule,
+  MatSelectModule,
+  MatChipsModule,
+  MatSnackBarModule,
+  MatDialogModule,
+  MatGridListModule,
+  MatStepperModule,
+  MatRadioModule,
+  MatListModule,
+  MatAutocompleteModule
+} from '@angular/material' ;
+import { CommonModule } from '@angular/common';
+import {FlexLayoutModule} from '@angular/flex-layout';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+@NgModule({
+  imports: [
+  CommonModule,
+  MatButtonModule,
+  MatMenuModule,
+  MatToolbarModule,
+  MatIconModule,
+  MatCardModule,
+  MatSidenavModule,
+  MatProgressBarModule,
+  MatFormFieldModule,
+  MatDatepickerModule,
+  MatNativeDateModule,
+  MatInputModule,
+  MatCheckboxModule,
+  MatSelectModule,
+  MatChipsModule,
+  MatSnackBarModule,
+  MatDialogModule,
+  MatGridListModule,
+  MatStepperModule,
+  MatRadioModule,
+  MatListModule,
+  MatAutocompleteModule,
+  FlexLayoutModule,
+  FormsModule,
+  ReactiveFormsModule
+  ],
+  exports: [
+    MatButtonModule,
+    MatMenuModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatCardModule,
+    MatSidenavModule,
+    MatProgressBarModule,
+    MatFormFieldModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatInputModule,
+    MatCheckboxModule,
+    MatSelectModule,
+    MatChipsModule,
+    MatSnackBarModule,
+    MatDialogModule,
+    MatGridListModule,
+    MatStepperModule,
+    MatRadioModule,
+    MatListModule,
+    MatAutocompleteModule,
+    FlexLayoutModule,
+    FormsModule,
+    ReactiveFormsModule
+  ],
+  declarations: []
+})
+export class UiLibraryModule { }
