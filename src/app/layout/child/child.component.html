@@ -1,0 +1,20 @@
+<table style="border: 1px solid green;">
+    <tr>
+
+        <td> CountryName </td>
+        <td> Language </td>
+    </tr>
+
+    <tr  *ngFor="let country of childCountries">
+        <td>
+            {{country.name}}
+        </td>
+        <td>
+            <div *ngFor="let language of country.languages">
+                {{language.name}}
+            </div>
+        </td>
+    </tr>
+
+
+</table>

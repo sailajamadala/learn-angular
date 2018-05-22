@@ -20,10 +20,10 @@
       <table class="table-width">
         <td>
           <mat-form-field class="field-width">
-            <mat-select placeholder="Country" name="country" formControlName="country">
+            <mat-select placeholder="Country" name="country" [(ngModel)]="selectedCountry" formControlName="country"  (change)="optionSelected($event)">
               <mat-option>None</mat-option>
               <mat-option *ngFor="let country of countries" [value]="country">
-                {{country}}
+                {{country.name}}
               </mat-option>
             </mat-select>
           </mat-form-field>
@@ -32,7 +32,7 @@
         <td>
           <mat-form-field class="field-width">
             <mat-select placeholder="Language" name="language" formControlName="language">
-              <mat-option *ngFor="let language of languages" [value]="language.value">
+              <mat-option *ngFor="let language of languages" [value]="language">
                 {{ language }}
               </mat-option>
             </mat-select>

@@ -5,6 +5,8 @@ import { LayoutRoutingModule } from './layout-routing.module';
 import { ProfileComponent } from './profile/profile.component';
 import { UiLibraryModule } from '../ui-library/ui-library.module';
 import { ShowErrorsComponent } from '../show-errors/show-errors.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
 
 @NgModule({
   imports: [
@@ -13,6 +15,6 @@ import { ShowErrorsComponent } from '../show-errors/show-errors.component';
     UiLibraryModule,
 
   ],
-  declarations: [ProfileComponent, ShowErrorsComponent]
+  declarations: [ProfileComponent, ShowErrorsComponent, ParentComponent, ChildComponent]
 })
 export class LayoutModule { }

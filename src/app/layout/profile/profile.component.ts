@@ -10,6 +10,7 @@ import { DataService } from '../../data.service';
 })
 export class ProfileComponent implements OnInit {
   selectedCountry;
+  selectedLanguage;
   countries = [];
 
   languages = [];
@@ -47,19 +48,27 @@ export class ProfileComponent implements OnInit {
       temp = countryInfo;
       console.log(temp.length);
       temp.forEach(element => {
-        this.countries.push(element['name']);
+        this.countries.push(element);
         // this.languages.push([] = element['laguages'])
         // console.log(element['languages'].length);
         let linfo = [];
         linfo = element['languages'];
         // console.log(linfo.length);
-        linfo.forEach(lelement => { 
-        this.languages.push(lelement['name']);
-        })
+      
       });
     });
 
   }
+  optionSelected(event): void {
+    this.selectedCountry = event.value;
+  console.log(this.selectedCountry);
+  this.languages = [];
+  this.selectedCountry['languages'].forEach(element => {
+    this.languages.push(element['name']);
+  });
+
+  }
+
   userDetails(): void {
     if (this.male.checked) {
       this.user['user_gender'] = 'Male';
